@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+*.mo
+.ruff_cache/
+.pytest_cache/
+.venv/
+build/
+dist/
+*.egg-info/
+*.wvd
+device_private_key*
+device_client_id*

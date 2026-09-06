@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Telerising</title>
+<style nonce="@@NONCE@@">
+body{margin:0;background:#101923;color:#ecf2f8;font:17px/1.5 system-ui,sans-serif}
+main{max-width:850px;margin:5vh auto;padding:24px}header{border-bottom:3px solid #49a8ee;padding-bottom:20px}
+h1{font-size:34px;margin:0}.brand{color:#6ec7ff;letter-spacing:.12em;font-weight:700}
+section{margin-top:24px;padding:22px;background:#1c2b3b;border-radius:8px}p{margin:12px 0}
+.controls{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}button,select,input{box-sizing:border-box;padding:12px 18px;border:1px solid #5b7896;border-radius:5px;background:#233f5c;color:white;font:inherit}
+button,select{cursor:pointer}button:hover{background:#315e89}button:focus-visible,select:focus-visible,input:focus-visible{outline:3px solid #8bdbff}button:disabled{opacity:.5;cursor:wait}
+#status,.notice{white-space:pre-wrap;overflow-wrap:anywhere}.notice{color:#a8dafa}small{color:#a0b5c9}
+.field{display:flex;flex-direction:column;gap:6px;margin-top:16px}.field input,.field select{width:100%}.check{display:flex;gap:10px;align-items:center;margin-top:12px}.check input{width:20px;height:20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:0 18px}[hidden]{display:none!important}
+</style>
+<main>
+<header><span class="brand">E²</span><h1>Telerising</h1><small>@@VERSION@@</small></header>
+<section><h2 data-label="title"></h2><p id="status" role="status"></p><p data-label="intro"></p>
+<div class="controls"><button data-action="start" data-label="start"></button><button data-action="stop" data-label="stop"></button><button data-action="restart" data-label="restart"></button><button id="check" data-label="check"></button><button id="original-webif" data-label="originalWebif"></button></div>
+<p><small data-label="originalHint"></small></p></section>
+<p id="notice" class="notice" role="status" aria-live="polite"></p>
+<section>
+<h2 data-label="accounts"></h2><button id="load-accounts" data-label="loadAccounts"></button>
+<label class="field" for="account-provider"><span data-label="provider"></span><select id="account-provider"></select></label>
+<form id="account-form" hidden>
+<label class="check" id="guest-row"><input type="checkbox" id="guest"><span data-label="guest"></span></label>
+<div id="credentials">
+<label class="field" id="login-row" for="login"><span data-label="login"></span><input id="login" type="text" autocomplete="username" spellcheck="false" maxlength="16384"></label>
+<label class="field" id="country-row" for="country" hidden><span data-label="country"></span><select id="country" aria-describedby="country-hint"></select></label>
+<small id="country-hint" data-label="countryHint" hidden></small>
+<div id="password-fields">
+<label class="field" for="password"><span data-label="password"></span><input id="password" type="password" autocomplete="new-password" spellcheck="false" maxlength="16384" aria-describedby="password-hint"></label>
+<small id="password-hint"></small>
+<label class="check"><input type="checkbox" id="show-password"><span data-label="showPassword"></span></label>
+</div>
+</div>
+<div class="grid">
+<label class="field" for="manifest"><span data-label="manifest"></span><select id="manifest"></select></label>
+<label class="field" for="bandwidth"><span data-label="bandwidth"></span><select id="bandwidth"></select></label>
+</div>
+<p><small data-label="accountHint"></small></p>
+<div class="controls"><button type="submit" id="save-account" data-label="saveAccount"></button><button type="button" id="reload-account" data-label="reloadAccount"></button></div>
+</form>
+<p id="account-notice" class="notice" role="status" aria-live="polite"></p>
+</section>
+<section><button id="providers" data-label="providers"></button><div class="controls"><select id="provider" aria-label="Provider"></select><button id="preview" data-label="preview"></button></div></section>
+</main>
+<script nonce="@@NONCE@@">
+const labels=@@LABELS@@;
+const csrf="@@TOKEN@@";
+const status=document.getElementById("status"),notice=document.getElementById("notice"),provider=document.getElementById("provider");
+const accountProvider=document.getElementById("account-provider"),accountForm=document.getElementById("account-form"),accountNotice=document.getElementById("account-notice");
+const login=document.getElementById("login"),password=document.getElementById("password"),guest=document.getElementById("guest"),manifest=document.getElementById("manifest"),bandwidth=document.getElementById("bandwidth"),country=document.getElementById("country");
+let account=null;
+document.querySelectorAll("[data-label]").forEach(node=>node.textContent=labels[node.dataset.label]);
+provider.setAttribute("aria-label",labels.providers);
+async function api(action,extra={}){
+ const options=action?{method:"POST",headers:{"X-Telerising-Token":csrf},body:new URLSearchParams({action,...extra})}:{};
+ const response=await fetch("/telerising/api",options);const data=await response.json();
+ if(!response.ok||!data.success)throw new Error(data.error||labels.failed);return data.result;
+}
+async function refresh(){const state=await api();status.textContent=`${state.active?state.active.source+" · "+state.active.tag:labels.missing}\n${state.ready?labels.running:state.running?labels.unreachable:labels.stopped} · ${state.platform.model}`;return state;}
+async function work(task,target=notice){document.querySelectorAll("button,select,input").forEach(node=>node.disabled=true);target.textContent=labels.working;
+ try{await task();target.textContent=labels.done;await refresh();}catch(error){target.textContent=error.message||labels.failed;}
+ finally{document.querySelectorAll("button,select,input").forEach(node=>node.disabled=false);document.getElementById("save-account").disabled=!account;}
+}
+function credentials(){
+ document.getElementById("credentials").hidden=guest.checked;
+ document.getElementById("password-fields").hidden=!!account?.country_mode;
+ document.getElementById("country-hint").hidden=!account?.country_mode;
+ document.getElementById("login-row").hidden=!!account?.country_mode;
+ document.getElementById("country-row").hidden=!account?.country_mode;
+ country.required=!!account?.country_mode;
+ login.required=!guest.checked&&!account?.country_mode;password.required=!guest.checked&&!account?.country_mode&&!account?.password_saved;
+}
+async function loadAccount(id){
+ account=null;accountForm.reset();accountForm.hidden=true;password.type="password";
+ if(!id)return;
+ const result=await api("account",{provider:id});account=result;
+ login.value=result.login;password.value="";guest.checked=result.guest;
+ country.replaceChildren();result.countries.forEach(([value,label])=>country.add(new Option(label,value)));
+ if(result.country_mode)country.value=result.login;
+ document.getElementById("guest-row").hidden=!result.guest_available;
+ document.getElementById("password-hint").textContent=result.password_saved?labels.passwordKeep:labels.passwordNew;
+ manifest.replaceChildren();result.manifests.forEach(([value,label])=>manifest.add(new Option(label,value)));
+ bandwidth.replaceChildren();result.qualities.forEach(([value,label])=>bandwidth.add(new Option(label,value)));
+ manifest.value=result.manifest;bandwidth.value=result.bandwidth;credentials();accountForm.hidden=false;
+}
+async function loadAccounts(selected=accountProvider.value){
+ const result=await api("catalog");accountProvider.replaceChildren();
+ result.providers.forEach(item=>accountProvider.add(new Option(item.configured?`${item.name} (${labels.configured})`:item.name,item.id)));
+ if(result.providers.some(item=>item.id===selected))accountProvider.value=selected;
+ await loadAccount(accountProvider.value);
+}
+async function loadImportedProviders(){
+ const result=await api("providers"),selected=provider.value;provider.replaceChildren();
+ result.providers.forEach(item=>provider.add(new Option(item.name,item.id)));
+ if(result.providers.some(item=>item.id===selected))provider.value=selected;
+}
+document.getElementById("load-accounts").onclick=()=>work(()=>loadAccounts(),accountNotice);
+accountProvider.onchange=()=>work(()=>loadAccount(accountProvider.value),accountNotice);
+guest.onchange=credentials;
+document.getElementById("show-password").onchange=event=>password.type=event.target.checked?"text":"password";
+document.getElementById("reload-account").onclick=()=>work(()=>loadAccount(accountProvider.value),accountNotice);
+accountForm.onsubmit=event=>{
+ event.preventDefault();if(!account||!accountForm.reportValidity())return;
+ const values={provider:account.provider,account_token:account.token,login:account.country_mode?country.value:login.value,password:account.country_mode?"":password.value,guest:String(guest.checked),manifest:manifest.value,bandwidth:bandwidth.value};
+ work(async()=>{await api("save_account",values);password.value="";await loadAccounts(values.provider);await loadImportedProviders();},accountNotice);
+};
+document.querySelectorAll("[data-action]").forEach(node=>node.onclick=()=>work(()=>api(node.dataset.action)));
+document.getElementById("original-webif").onclick=()=>{
+ const tab=window.open("about:blank","_blank");if(tab)tab.opener=null;
+ work(async()=>{
+  try{
+   const result=await api("web_login"),url=new URL(window.location.href);
+   url.protocol="http:";url.port=String(result.port);url.pathname="/";url.search="";url.hash="";
+   if(tab)tab.location.replace(url.href);else window.location.assign(url.href);
+  }catch(error){if(tab)tab.close();throw error;}
+ });
+};
+document.getElementById("check").onclick=()=>work(async()=>{const release=await api("check");if(!release.update_available){alert(labels.current);return;}if(confirm(`${release.source}\n${release.tag}\n\n${labels.confirmInstall}`))await api("install");});
+document.getElementById("providers").onclick=()=>work(loadImportedProviders);
+document.getElementById("preview").onclick=()=>work(async()=>{if(!provider.value){alert(labels.empty);return;}const preview=await api("preview",{provider:provider.value});if(confirm(`${preview.count}\n${preview.names.join("\n")}\n\n${labels.confirmImport}`))await api("import");});
+work(async()=>{const state=await refresh();if(state.ready){await loadAccounts();await loadImportedProviders();}});
+let refreshing=false;
+setInterval(async()=>{
+ if(refreshing||document.hidden||document.getElementById("check").disabled)return;
+ refreshing=true;
+ try{await refresh();}catch(error){status.textContent=error.message||labels.failed;}finally{refreshing=false;}
+},5000);
+</script>
+</html>

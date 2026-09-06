@@ -1,0 +1,32 @@
+<setupxml>
+	<setup key="telerising" title="Telerising settings" showOpenWebif="1">
+		<item level="0" text="Download source" description="The selected source will be used for the next installation.">config.plugins.telerising.source</item>
+		<item level="0" text="Start server automatically" description="Start the installed server when the receiver boots. This setting is included in the Enigma2 settings backup.">config.plugins.telerising.autostart</item>
+		<item level="0" text="Show web interface in OpenWebif" description="Enable Telerising in the OpenWebif menu to set up providers and import channels in the browser.">config.plugins.telerising.webif</item>
+		<item level="0" text="Playback profile" description="5001/5002 use ServiceApp; 4097 uses Enigma2's internal GStreamer player. Reimport existing Telerising bouquets to apply a player change.">config.plugins.telerising.service_type</item>
+		<item level="0" text="Notify about updates" description="Show a short toast once per new release. Updates are installed manually.">config.plugins.telerising.update_toast</item>
+	</setup>
+	<setup key="telerisingschedule" title="Telerising scheduled tasks">
+		<item level="0" text="Check for updates" description="Use the Enigma2 scheduler to check the selected download source. No update is installed automatically.">config.plugins.telerising.update_interval</item>
+		<if conditional="config.plugins.telerising.update_interval.value != 'off'">
+			<item level="0" text="Update check time">config.plugins.telerising.update_time</item>
+			<item level="0" text="Update check weekday" conditional="config.plugins.telerising.update_interval.value == 'weekly'">config.plugins.telerising.update_day</item>
+		</if>
+		<item level="0" text="Synchronize channel lists" description="Refresh existing Telerising bouquets using the local server. Other bouquets remain unchanged.">config.plugins.telerising.channels_interval</item>
+		<if conditional="config.plugins.telerising.channels_interval.value != 'off'">
+			<item level="0" text="Channel synchronization time">config.plugins.telerising.channels_time</item>
+			<item level="0" text="Channel synchronization weekday" conditional="config.plugins.telerising.channels_interval.value == 'weekly'">config.plugins.telerising.channels_day</item>
+		</if>
+		<item level="0" text="Run scheduled tasks only in standby" description="Postpone a task until standby. These tasks do not wake the receiver from deep standby.">config.plugins.telerising.standby_only</item>
+	</setup>
+	<setup key="telerisingprovider" title="Telerising provider">
+		<item level="0" text="Country" description="Select the country for the Pluto channel list. No account or password is required." conditional="config.plugins.telerising.provider.country_mode.value">config.plugins.telerising.provider.country</item>
+		<item level="0" text="Use without signing in" description="Only available for providers that support guest access." conditional="config.plugins.telerising.provider.guest_available.value">config.plugins.telerising.provider.guest</item>
+		<if conditional="not config.plugins.telerising.provider.guest.value and not config.plugins.telerising.provider.country_mode.value">
+			<item level="0" text="Username / email" description="Edit the saved login. Changing the username briefly restarts the local server.">config.plugins.telerising.provider.login</item>
+			<item level="0" text="Password" description="Edit the saved password. Changes are saved to the local Telerising server.">config.plugins.telerising.provider.password</item>
+		</if>
+		<item level="0" text="Stream format" description="The playback profile is selected separately for bouquet import.">config.plugins.telerising.provider.manifest</item>
+		<item level="0" text="Picture quality" description="Available quality levels depend on the provider and account.">config.plugins.telerising.provider.bandwidth</item>
+	</setup>
+</setupxml>

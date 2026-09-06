@@ -1,0 +1,857 @@
+# Telerising gettext catalog.
+msgid ""
+msgstr "Project-Id-Version: Telerising 0.1.0\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2026-09-05 00:00+0000\nPO-Revision-Date: 2026-09-05 00:00+0000\nLast-Translator: Telerising contributors\nLanguage-Team: German\nLanguage: de\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../setup.xml
+msgid "5001/5002 use ServiceApp; 4097 uses Enigma2's internal GStreamer player. Reimport existing Telerising bouquets to apply a player change."
+msgstr "5001/5002 verwenden ServiceApp; 4097 verwendet den internen GStreamer-Player von Enigma2. Telerising-Bouquets erneut importieren, um einen Playerwechsel zu übernehmen."
+
+#: ../core.py:63
+msgid "A Telerising operation is already running."
+msgstr "Eine Telerising-Aktion läuft bereits."
+
+#: ../plugin.py:202 ../plugin.py:133
+msgid "About Telerising"
+msgstr "Über Telerising"
+
+#: ../plugin.py:86 ../plugin.py:161 ../webif.py:153
+#, python-brace-format
+msgid "Action failed ({error})."
+msgstr "Aktion fehlgeschlagen ({error})."
+
+#: ../webif.py:174
+msgid "Advanced settings in the original web interface. Sign-in is handled automatically."
+msgstr "Erweiterte Einstellungen im originalen Webinterface. Die Anmeldung erfolgt automatisch."
+
+#: ../core.py:45
+msgid "Argentina"
+msgstr "Argentinien"
+
+#: ../core.py:254
+msgid "At least 650 MB of free storage is required."
+msgstr "Mindestens 650 MB freier Speicher werden benötigt."
+
+#: ../setup.xml
+msgid "Available quality levels depend on the provider and account."
+msgstr "Die verfügbaren Qualitätsstufen hängen vom Anbieter und Konto ab."
+
+#: ../plugin.py:199
+msgid "Binary downloads:"
+msgstr "Binary-Downloads:"
+
+#: ../core.py:45
+msgid "Brazil"
+msgstr "Brasilien"
+
+#: ../core.py:45
+msgid "Canada"
+msgstr "Kanada"
+
+#: ../plugin.py:209
+msgid "Changing autostart…"
+msgstr "Autostart wird geändert …"
+
+#: ../webif.py:171
+msgid "Changing the username or guest access briefly restarts the local server."
+msgstr "Eine Änderung des Benutzernamens oder Gastzugangs startet den lokalen Server kurz neu."
+
+#: ../setup.xml
+msgid "Channel synchronization time"
+msgstr "Uhrzeit des Senderabgleichs"
+
+#: ../setup.xml
+msgid "Channel synchronization weekday"
+msgstr "Wochentag des Senderabgleichs"
+
+#: ../setup.xml
+msgid "Check for updates"
+msgstr "Nach Updates suchen"
+
+#: ../plugin.py:212
+msgid "Checking the latest GitHub release…"
+msgstr "Aktuellen GitHub-Release prüfen …"
+
+#: ../core.py:45
+msgid "Chile"
+msgstr "Chile"
+
+#: ../plugin.py:121
+msgid "Close"
+msgstr "Schließen"
+
+#: ../plugin.py:128 ../plugin.py:129
+msgid "Close Telerising"
+msgstr "Telerising schließen"
+
+#: ../webif.py:165
+msgid "Configured"
+msgstr "Eingerichtet"
+
+#: ../core.py:380 ../core.py:399
+msgid "Could not change autostart."
+msgstr "Autostart konnte nicht geändert werden."
+
+#: ../releases.py:71
+msgid "Could not determine the latest release version."
+msgstr "Die aktuelle Release-Version konnte nicht ermittelt werden."
+
+#: ../releases.py:58
+msgid "Could not find exactly one matching release download for this receiver."
+msgstr "Kein eindeutig passender Release-Download für diese Box."
+
+#: ../webif.py:59
+msgid "Could not open the original Telerising web interface. Please check the server version."
+msgstr "Das originale Telerising-Webinterface konnte nicht geöffnet werden. Bitte prüfe die Serverversion."
+
+#: ../core.py:140
+msgid "Could not prepare the saved provider profiles. Please check the Telerising startup log."
+msgstr "Die gespeicherten Anbieterprofile konnten nicht vorbereitet werden. Bitte prüfe das Telerising-Startprotokoll."
+
+#: ../core.py:452
+msgid "Could not read the saved provider settings."
+msgstr "Die gespeicherten Anbietereinstellungen konnten nicht gelesen werden."
+
+#: ../scheduler.py:66
+msgid "Could not save the update notification state."
+msgstr "Der Status des Updatehinweises konnte nicht gespeichert werden."
+
+#: ../webif.py:166 ../setup.xml
+msgid "Country"
+msgstr "Land"
+
+#: ../plugin.py:270
+msgid "Creating TV bouquet…"
+msgstr "TV-Bouquet wird erstellt …"
+
+#: ../settings.py:13
+msgid "Daily"
+msgstr "Täglich"
+
+#: ../core.py:45
+msgid "Denmark"
+msgstr "Dänemark"
+
+#: ../plugin.py:183
+msgid "Disable autostart"
+msgstr "Autostart ausschalten"
+
+#: ../settings.py:13
+msgid "Disabled"
+msgstr "Deaktiviert"
+
+#: ../webif.py:182
+msgid "Done."
+msgstr "Fertig."
+
+#: ../releases.py:26
+#, python-brace-format
+msgid "Download server is unreachable ({error})."
+msgstr "Downloadserver nicht erreichbar ({error})."
+
+#: ../setup.xml
+msgid "Download source"
+msgstr "Downloadquelle"
+
+#: ../releases.py:85
+msgid "Download source is not allowed."
+msgstr "Unzulässige Downloadquelle."
+
+#: ../plugin.py:222
+msgid "Downloading and installing…"
+msgstr "Download und Installation …"
+
+#: ../plugin.py:221
+msgid "Dreambox Two: Support for this receiver is experimental."
+msgstr "Dreambox Two: Die Unterstützung für diesen Receiver ist experimentell."
+
+#: ../plugin.py:267
+#, python-brace-format
+msgid "EPG/picon references matched: {matched}/{count}. Select sources and import guide data in EPGImport."
+msgstr "EPG-/Picon-Referenzen zugeordnet: {matched}/{count}. Quellen auswählen und Programmdaten in EPGImport importieren."
+
+#: ../plugin.py:180
+msgid "EPGImport / program guide"
+msgstr "EPGImport / Programmführer"
+
+#: ../setup.xml
+msgid "Edit the saved login. Changing the username briefly restarts the local server."
+msgstr "Gespeicherten Benutzernamen bearbeiten. Eine Änderung startet den lokalen Server kurz neu."
+
+#: ../setup.xml
+msgid "Edit the saved password. Changes are saved to the local Telerising server."
+msgstr "Gespeichertes Passwort bearbeiten. Änderungen werden auf dem lokalen Telerising-Server gespeichert."
+
+#: ../setup.xml
+msgid "Enable Telerising in the OpenWebif menu to set up providers and import channels in the browser."
+msgstr "Aktiviert Telerising im OpenWebif-Menü, um Anbieter einzurichten und Sender im Browser zu importieren."
+
+#: ../plugin.py:183
+msgid "Enable autostart"
+msgstr "Autostart einschalten"
+
+#: ../settings.py:11
+msgid "Enigma2 / internal GStreamer (4097)"
+msgstr "Enigma2 / interner GStreamer (4097)"
+
+#: ../webif.py:167
+msgid "Enter the provider password."
+msgstr "Passwort des Anbieterkontos eingeben."
+
+#: ../plugin.py:263
+msgid "Fetching channel list…"
+msgstr "Senderliste abrufen …"
+
+#: ../core.py:45
+msgid "France"
+msgstr "Frankreich"
+
+#: ../settings.py:14
+msgid "Friday"
+msgstr "Freitag"
+
+#: ../core.py:45 ../settings.py:26
+msgid "Germany"
+msgstr "Deutschland"
+
+#: ../plugin.py:125
+msgid "INFO: About Telerising"
+msgstr "INFO: Über Telerising"
+
+#: ../plugin.py:123
+msgid "Import channels"
+msgstr "Sender importieren"
+
+#: ../plugin.py:131 ../plugin.py:179
+msgid "Import channels into the TV channel list"
+msgstr "Sender in die TV-Kanalliste importieren"
+
+#: ../webif.py:181
+msgid "Import these channels? The previous bouquet for this provider will be backed up and replaced."
+msgstr "Diese Sender importieren? Das bisherige Bouquet dieses Anbieters wird gesichert und ersetzt."
+
+#: ../plugin.py:266
+#, python-brace-format
+msgid "Import {count} channels into a dedicated TV bouquet?\n\n{channels}\n\nAn earlier Telerising import for this provider will be backed up and replaced."
+msgstr "{count} Sender in ein eigenes TV-Bouquet importieren?\n\n{channels}\n\nEin früherer Telerising-Import dieses Anbieters wird gesichert und ersetzt."
+
+#: ../plugin.py:275
+#, python-brace-format
+msgid "Imported {count} channels. The Telerising bouquet is now available in the TV channel list."
+msgstr "{count} Sender wurden importiert. Das Telerising-Bouquet steht jetzt in der normalen TV-Kanalliste."
+
+#: ../plugin.py:177 ../webif.py:175
+msgid "Install server / check for updates"
+msgstr "Server installieren / nach Updates suchen"
+
+#: ../webif.py:180
+msgid "Install the selected release? Playing Telerising channels will be interrupted briefly."
+msgstr "Die gewählte Version installieren? Laufende Telerising-Sender werden kurz unterbrochen."
+
+#: ../core.py:173
+msgid "Invalid API request."
+msgstr "Ungültiger API-Aufruf."
+
+#: ../core.py:189
+msgid "Invalid API response. Check the login and server version."
+msgstr "Ungültige API-Antwort. Anmeldung und Serverversion prüfen."
+
+#: ../playlist.py:130 ../playlist.py:162 ../playlist.py:137
+msgid "Invalid Telerising backup directory."
+msgstr "Ungültiges Telerising-Sicherungsverzeichnis."
+
+#: ../playlist.py:29
+msgid "Invalid channel entry."
+msgstr "Ungültiger Sendereintrag."
+
+#: ../playlist.py:53
+msgid "Invalid channel profile."
+msgstr "Ungültiges Senderprofil."
+
+#: ../core.py:116
+msgid "Invalid installation path."
+msgstr "Ungültiger Installationspfad."
+
+#: ../core.py:113
+msgid "Invalid installation state."
+msgstr "Ungültiger Installationsstand."
+
+#: ../playlist.py:149
+msgid "Invalid provider ID."
+msgstr "Ungültige Anbieter-ID."
+
+#: ../core.py:214
+msgid "Invalid provider definition."
+msgstr "Ungültige Anbieterdefinition."
+
+#: ../webif.py:51 ../webif.py:116
+msgid "Invalid request."
+msgstr "Ungültige Anfrage."
+
+#: ../core.py:45
+msgid "Italy"
+msgstr "Italien"
+
+#: ../webif.py:167
+msgid "Leave empty to keep the saved password."
+msgstr "Leer lassen, um das gespeicherte Passwort beizubehalten."
+
+#: ../webif.py:175
+msgid "Load configured providers"
+msgstr "Eingerichtete Anbieter laden"
+
+#: ../webif.py:164
+msgid "Load providers"
+msgstr "Anbieter laden"
+
+#: ../plugin.py:263
+msgid "Loading configured providers…"
+msgstr "Eingerichtete Anbieter laden …"
+
+#: ../plugin.py:260
+msgid "Loading provider settings…"
+msgstr "Anbietereinstellungen werden geladen …"
+
+#: ../plugin.py:244
+msgid "Loading providers…"
+msgstr "Anbieter werden geladen …"
+
+#: ../plugin.py:298
+msgid "Local TV server"
+msgstr "Lokaler TV-Server"
+
+#: ../plugin.py:297 ../webif.py:162
+msgid "Local TV server and channel import"
+msgstr "Lokaler TV-Server und Senderimport"
+
+#: ../webif.py:34
+msgid "Method not allowed."
+msgstr "Methode nicht erlaubt."
+
+#: ../core.py:45
+msgid "Mexico"
+msgstr "Mexiko"
+
+#: ../playlist.py:36
+msgid "Missing channel name."
+msgstr "Sendername fehlt."
+
+#: ../settings.py:14
+msgid "Monday"
+msgstr "Montag"
+
+#: ../playlist.py:20
+msgid "No M3U channel list was received."
+msgstr "Keine M3U-Senderliste erhalten."
+
+#: ../releases.py:61
+msgid "No SHA256 digest is available for this download. Installation aborted."
+msgstr "Für diesen Download fehlt ein SHA256-Nachweis. Installation abgebrochen."
+
+#: ../core.py:340
+msgid "No previous installation is available."
+msgstr "Keine vorherige Installation vorhanden."
+
+#: ../plugin.py:249 ../webif.py:182
+msgid "No provider has been configured yet."
+msgstr "Noch kein Anbieter eingerichtet."
+
+#: ../core.py:45
+msgid "Norway"
+msgstr "Norwegen"
+
+#: ../setup.xml
+msgid "Notify about updates"
+msgstr "Über Updates informieren"
+
+#: ../plugin.py:202
+msgid "OK"
+msgstr "OK"
+
+#: ../setup.xml
+msgid "Only available for providers that support guest access."
+msgstr "Nur für Anbieter mit Gastzugang verfügbar."
+
+#: ../plugin.py:132
+msgid "Open Telerising settings"
+msgstr "Telerising-Einstellungen öffnen"
+
+#: ../webif.py:173
+msgid "Open original Telerising web interface"
+msgstr "Originales Telerising-Webinterface öffnen"
+
+#: ../webif.py:165 ../setup.xml
+msgid "Password"
+msgstr "Passwort"
+
+#: ../webif.py:169 ../setup.xml
+msgid "Picture quality"
+msgstr "Bildqualität"
+
+#: ../setup.xml
+msgid "Playback profile"
+msgstr "Wiedergabeprofil"
+
+#: ../core.py:479
+msgid "Please enter a username/email and password."
+msgstr "Bitte Benutzernamen/E-Mail und Passwort eingeben."
+
+#: ../core.py:522
+msgid "Please install ServiceApp and restart Enigma2 before using this playback profile."
+msgstr "Für dieses Playerprofil bitte zuerst ServiceApp installieren und Enigma2 neu starten."
+
+#: ../core.py:199 ../core.py:445
+msgid "Please install Telerising first."
+msgstr "Telerising zuerst installieren."
+
+#: ../core.py:252
+msgid "Please mount a storage device at /media/hdd first."
+msgstr "Bitte zuerst einen Datenträger unter /media/hdd einhängen."
+
+#: ../core.py:474
+msgid "Please select a supported country from the list."
+msgstr "Bitte wähle ein unterstütztes Land aus der Liste."
+
+#: ../setup.xml
+msgid "Postpone a task until standby. These tasks do not wake the receiver from deep standby."
+msgstr "Verschiebt eine Aufgabe bis zum Standby. Diese Aufgaben wecken den Receiver nicht aus dem Deep-Standby."
+
+#: ../webif.py:176
+msgid "Preview channel import"
+msgstr "Senderimport anzeigen"
+
+#: ../webif.py:164
+msgid "Provider"
+msgstr "Anbieter"
+
+#: ../plugin.py:119 ../plugin.py:168
+msgid "Reading status…"
+msgstr "Status wird gelesen …"
+
+#: ../setup.xml
+msgid "Refresh existing Telerising bouquets using the local server. Other bouquets remain unchanged."
+msgstr "Aktualisiert vorhandene Telerising-Bouquets über den lokalen Server. Andere Bouquets bleiben unverändert."
+
+#: ../webif.py:170
+msgid "Reload saved settings"
+msgstr "Gespeicherte Einstellungen neu laden"
+
+#: ../webif.py:119
+msgid "Reload the provider settings before saving."
+msgstr "Lade die Anbietereinstellungen vor dem Speichern erneut."
+
+#: ../webif.py:183
+msgid "Request failed. Please reload the page and check the server status."
+msgstr "Anfrage fehlgeschlagen. Bitte lade die Seite neu und prüfe den Serverstatus."
+
+#: ../plugin.py:182 ../webif.py:172
+msgid "Restart server"
+msgstr "Server neu starten"
+
+#: ../plugin.py:182
+msgid "Restarting server…"
+msgstr "Server startet neu …"
+
+#: ../plugin.py:184
+msgid "Restore previous version"
+msgstr "Vorherige Version wiederherstellen"
+
+#: ../plugin.py:225
+msgid "Restore the previous server version and keep the current provider profiles?"
+msgstr "Die vorherige Serverversion wiederherstellen und die aktuellen Anbieterprofile behalten?"
+
+#: ../plugin.py:225
+msgid "Restoring previous version…"
+msgstr "Vorherige Version wiederherstellen …"
+
+#: ../setup.xml
+msgid "Run scheduled tasks only in standby"
+msgstr "Geplante Aufgaben nur im Standby ausführen"
+
+#: ../plugin.py:127 ../plugin.py:130
+msgid "Run the selected action"
+msgstr "Ausgewählte Aktion ausführen"
+
+#: ../plugin.py:174 ../webif.py:177
+msgid "Running"
+msgstr "Läuft"
+
+#: ../releases.py:99
+msgid "SHA256 mismatch. The download will not be installed."
+msgstr "SHA256 stimmt nicht überein. Download wird nicht installiert."
+
+#: ../settings.py:14
+msgid "Saturday"
+msgstr "Samstag"
+
+#: ../webif.py:170
+msgid "Save provider settings"
+msgstr "Anbietereinstellungen speichern"
+
+#: ../plugin.py:185
+msgid "Scheduled tasks"
+msgstr "Geplante Aufgaben"
+
+#: ../plugin.py:122
+msgid "Select"
+msgstr "Auswählen"
+
+#: ../webif.py:166 ../setup.xml
+msgid "Select the country for the Pluto channel list. No account or password is required."
+msgstr "Wähle das Land für die Pluto-Senderliste. Ein Konto oder Passwort wird nicht benötigt."
+
+#: ../plugin.py:173 ../webif.py:177
+msgid "Server not installed"
+msgstr "Server noch nicht installiert"
+
+#: ../core.py:142
+msgid "Service action failed. Please check the Telerising log."
+msgstr "Dienstaktion fehlgeschlagen. Bitte das Telerising-Protokoll prüfen."
+
+#: ../plugin.py:178 ../webif.py:164
+msgid "Set up provider"
+msgstr "Anbieter einrichten"
+
+#: ../webif.py:163
+msgid "Set up providers here or on the receiver. Imported channels appear in the normal TV channel list."
+msgstr "Richte Anbieter hier oder am Receiver ein. Importierte Sender erscheinen in der normalen TV-Kanalliste."
+
+#: ../plugin.py:79
+msgid "Setting up provider…"
+msgstr "Anbieter wird eingerichtet …"
+
+#: ../plugin.py:124
+msgid "Settings"
+msgstr "Einstellungen"
+
+#: ../plugin.py:186
+msgid "Settings / optional web interface"
+msgstr "Einstellungen / optionales Webinterface"
+
+#: ../setup.xml
+msgid "Show a short toast once per new release. Updates are installed manually."
+msgstr "Zeigt pro neuer Version einmal einen kurzen Toast. Updates werden manuell installiert."
+
+#: ../webif.py:168
+msgid "Show password"
+msgstr "Passwort anzeigen"
+
+#: ../setup.xml
+msgid "Show web interface in OpenWebif"
+msgstr "Webinterface in OpenWebif anzeigen"
+
+#: ../core.py:45
+msgid "Spain"
+msgstr "Spanien"
+
+#: ../plugin.py:181 ../webif.py:172
+msgid "Start server"
+msgstr "Server starten"
+
+#: ../setup.xml
+msgid "Start server automatically"
+msgstr "Server automatisch starten"
+
+#: ../setup.xml
+msgid "Start the installed server when the receiver boots. This setting is included in the Enigma2 settings backup."
+msgstr "Den installierten Server beim Start des Receivers starten. Diese Einstellung wird mit den Enigma2-Einstellungen gesichert."
+
+#: ../plugin.py:174 ../webif.py:178
+msgid "Started, but not reachable"
+msgstr "Gestartet, aber nicht erreichbar"
+
+#: ../plugin.py:206
+msgid "Starting server…"
+msgstr "Server wird gestartet …"
+
+#: ../plugin.py:181 ../webif.py:172
+msgid "Stop server"
+msgstr "Server stoppen"
+
+#: ../plugin.py:174 ../webif.py:177
+msgid "Stopped"
+msgstr "Gestoppt"
+
+#: ../plugin.py:206
+msgid "Stopping server…"
+msgstr "Server wird gestoppt …"
+
+#: ../webif.py:169 ../setup.xml
+msgid "Stream format"
+msgstr "Streamformat"
+
+#: ../settings.py:14
+msgid "Sunday"
+msgstr "Sonntag"
+
+#: ../core.py:45
+msgid "Sweden"
+msgstr "Schweden"
+
+#: ../setup.xml
+msgid "Synchronize channel lists"
+msgstr "Senderlisten abgleichen"
+
+#: ../core.py:160
+msgid "Telerising did not become ready. Please check the log."
+msgstr "Telerising wird nicht bereit. Bitte das Protokoll prüfen."
+
+#: ../core.py:182
+msgid "Telerising is unreachable or rejected the request."
+msgstr "Telerising ist nicht erreichbar oder hat die Anfrage abgelehnt."
+
+#: ../plugin.py:251 ../setup.xml
+msgid "Telerising provider"
+msgstr "Telerising-Anbieter"
+
+#: ../core.py:193
+msgid "Telerising rejected the request. Check the provider, login details and account permissions."
+msgstr "Telerising hat die Anfrage abgelehnt. Anbieter, Anmeldedaten und Kontoberechtigung prüfen."
+
+#: ../core.py:192
+msgid "Telerising requires a Widevine device file (WVD) for this provider, but it is missing. Account login could not be checked."
+msgstr "Telerising benötigt für diesen Anbieter eine Widevine-Gerätedatei (WVD), die fehlt. Die Kontoanmeldung konnte nicht geprüft werden."
+
+#: ../scheduler.py:67
+msgid "Telerising scheduled task completed."
+msgstr "Geplante Telerising-Aufgabe abgeschlossen."
+
+#: ../scheduler.py:78
+#, python-brace-format
+msgid "Telerising scheduled task failed ({error})."
+msgstr "Geplante Telerising-Aufgabe fehlgeschlagen ({error})."
+
+#: ../setup.xml
+msgid "Telerising scheduled tasks"
+msgstr "Geplante Telerising-Aufgaben"
+
+#: ../setup.xml
+msgid "Telerising settings"
+msgstr "Telerising-Einstellungen"
+
+#: ../core.py:136
+msgid "Telerising storage is not mounted. Please check /media/hdd and start the server again."
+msgstr "Der Telerising-Datenträger ist nicht eingebunden. Bitte /media/hdd prüfen und den Server erneut starten."
+
+#: ../plugin.py:198
+msgid "Telerising support (Kodinerds):"
+msgstr "Telerising-Support (Kodinerds):"
+
+#: ../scheduler.py:65
+#, python-brace-format
+msgid "Telerising update available: {source} {tag}"
+msgstr "Telerising-Update verfügbar: {source} {tag}"
+
+#: ../scheduler.py:95
+msgid "Telerising: Check for updates"
+msgstr "Telerising: Nach Updates suchen"
+
+#: ../scheduler.py:95
+msgid "Telerising: Synchronize channels"
+msgstr "Telerising: Sender abgleichen"
+
+#: ../plugin.py:200
+msgid "Thanks to easy4me, fds97AVVS and all contributors for Telerising and the available builds."
+msgstr "Vielen Dank an easy4me, fds97AVVS und alle Mitwirkenden für Telerising und die bereitgestellten Builds."
+
+#: ../core.py:179
+msgid "The Telerising response is too large."
+msgstr "Die Antwort von Telerising ist zu groß."
+
+#: ../webif.py:31
+msgid "The Telerising web interface is disabled."
+msgstr "Das Telerising-Webinterface ist deaktiviert."
+
+#: ../core.py:202
+msgid "The Telerising web password is missing."
+msgstr "Das Telerising-Webpasswort fehlt."
+
+#: ../core.py:138
+msgid "The VPN endpoint route could not be prepared. Please check the receiver's network routes."
+msgstr "Die Route zum VPN-Endpunkt konnte nicht eingerichtet werden. Bitte die Netzwerkrouten des Receivers prüfen."
+
+#: ../core.py:282
+msgid "The binary does not match the receiver's userspace."
+msgstr "Das Binary passt nicht zum Userspace der Box."
+
+#: ../playlist.py:42
+msgid "The channel list is empty or incomplete."
+msgstr "Die Senderliste ist leer oder unvollständig."
+
+#: ../core.py:250
+msgid "The device or selected download source has changed."
+msgstr "Gerät oder ausgewählte Downloadquelle hat sich geändert."
+
+#: ../releases.py:93
+msgid "The download exceeds the size limit."
+msgstr "Download überschreitet die erlaubte Größe."
+
+#: ../releases.py:23
+msgid "The download server response is too large."
+msgstr "Antwort des Downloadservers ist zu groß."
+
+#: ../core.py:270
+msgid "The extracted installation is too large."
+msgstr "Entpackte Installation ist zu groß."
+
+#: ../plugin.py:216 ../webif.py:179
+msgid "The latest version is already installed."
+msgstr "Die aktuelle Version ist bereits installiert."
+
+#: ../core.py:239
+msgid "The local Telerising server is not supported on this model."
+msgstr "Lokaler Telerising-Server ist für dieses Modell nicht freigegeben."
+
+#: ../setup.xml
+msgid "The playback profile is selected separately for bouquet import."
+msgstr "Das passende Wiedergabeprofil wird separat für den Bouquetimport gewählt."
+
+#: ../playlist.py:96
+msgid "The playlist contains URLs that do not point to the local Telerising server."
+msgstr "Die Playlist verweist nicht ausschließlich auf den lokalen Telerising-Server."
+
+#: ../core.py:210
+msgid "The provider definition in this version is not supported yet."
+msgstr "Die Anbieterdefinition dieser Version wird noch nicht unterstützt."
+
+#: ../core.py:53 ../core.py:464
+msgid "The provider or manifest type is not supported."
+msgstr "Anbieter oder Manifesttyp wird nicht unterstützt."
+
+#: ../releases.py:97
+msgid "The release download was interrupted."
+msgstr "Der Release-Download wurde unterbrochen."
+
+#: ../core.py:123
+msgid "The selected installation is missing."
+msgstr "Die ausgewählte Installation fehlt."
+
+#: ../core.py:470
+msgid "The selected picture quality is not supported."
+msgstr "Die gewählte Bildqualität wird nicht unterstützt."
+
+#: ../setup.xml
+msgid "The selected source will be used for the next installation."
+msgstr "Die ausgewählte Quelle wird beim nächsten Installieren verwendet."
+
+#: ../core.py:537
+msgid "The server version changed. Fetch a new channel preview."
+msgstr "Die Serverversion hat sich geändert. Rufe eine neue Sendervorschau ab."
+
+#: ../core.py:460
+msgid "The server version changed. Reopen the provider settings."
+msgstr "Die Serverversion hat sich geändert. Öffne die Anbietereinstellungen erneut."
+
+#: ../webif.py:46
+msgid "The session has expired. Reload this page."
+msgstr "Die Sitzung ist abgelaufen. Lade diese Seite neu."
+
+#: ../plugin.py:196
+msgid "This helper plugin simplifies Telerising installation, updates, account setup and channel import on Enigma2."
+msgstr "Dieses Helper-Plugin vereinfacht Installation, Updates, Kontoeinrichtung und Senderimport von Telerising auf Enigma2."
+
+#: ../playlist.py:34
+msgid "This list contains unsupported stream URLs."
+msgstr "Diese Liste enthält nicht unterstützte Streamadressen."
+
+#: ../plugin.py:256
+msgid "This provider requires a device code, cookies or another special login flow. This plugin version supports native username/email login and guest access."
+msgstr "Dieser Anbieter benötigt Gerätecode, Cookies oder einen anderen speziellen Login. Die erste Pluginversion unterstützt native Benutzername-/E-Mail-Anmeldung und Gastzugang."
+
+#: ../core.py:466
+msgid "This provider requires a login."
+msgstr "Dieser Anbieter benötigt eine Anmeldung."
+
+#: ../core.py:468 ../webif.py:87
+msgid "This provider requires a special login flow. This plugin version supports username/email login and guest access."
+msgstr "Dieser Anbieter benötigt einen speziellen Anmeldeablauf. Die erste Pluginversion unterstützt Benutzername/E-Mail und Gastzugang."
+
+#: ../settings.py:14
+msgid "Thursday"
+msgstr "Donnerstag"
+
+#: ../settings.py:14
+msgid "Tuesday"
+msgstr "Dienstag"
+
+#: ../releases.py:74
+msgid "Unexpected release format."
+msgstr "Unerwartetes Release-Format."
+
+#: ../core.py:45
+msgid "United Kingdom"
+msgstr "Vereinigtes Königreich"
+
+#: ../core.py:45
+msgid "United States"
+msgstr "Vereinigte Staaten"
+
+#: ../webif.py:138
+msgid "Unknown action or missing preview. Please try again."
+msgstr "Unbekannte Aktion oder fehlende Vorschau. Bitte erneut versuchen."
+
+#: ../core.py:517 ../webif.py:83
+msgid "Unknown provider."
+msgstr "Unbekannter Anbieter."
+
+#: ../webif.py:41
+msgid "Unknown request."
+msgstr "Unbekannte Anfrage."
+
+#: ../core.py:131
+msgid "Unknown service action."
+msgstr "Unbekannte Dienstaktion."
+
+#: ../core.py:274
+msgid "Unsafe path in the release archive."
+msgstr "Unsicherer Pfad im Release-Archiv."
+
+#: ../setup.xml
+msgid "Update check time"
+msgstr "Uhrzeit der Updateprüfung"
+
+#: ../setup.xml
+msgid "Update check weekday"
+msgstr "Wochentag der Updateprüfung"
+
+#: ../setup.xml
+msgid "Use the Enigma2 scheduler to check the selected download source. No update is installed automatically."
+msgstr "Prüft die gewählte Downloadquelle über den Enigma2-Scheduler. Updates werden nicht automatisch installiert."
+
+#: ../webif.py:168 ../setup.xml
+msgid "Use without signing in"
+msgstr "Ohne Anmeldung verwenden"
+
+#: ../webif.py:165 ../setup.xml
+msgid "Username / email"
+msgstr "Benutzername / E-Mail"
+
+#: ../plugin.py:197
+msgid "We cannot provide support for Telerising login or M3U export failures, add providers or extend the server. For these topics, please use the Kodinerds forum."
+msgstr "Wir können bei Telerising-Anmelde- oder M3U-Exportproblemen keinen Support leisten, keine Anbieter ergänzen und den Server nicht erweitern. Bitte wende dich dafür an das Kodinerds-Forum."
+
+#: ../settings.py:14
+msgid "Wednesday"
+msgstr "Mittwoch"
+
+#: ../settings.py:13
+msgid "Weekly"
+msgstr "Wöchentlich"
+
+#: ../webif.py:176
+msgid "Working…"
+msgstr "Wird ausgeführt …"
+
+#: ../plugin.py:247
+#, python-brace-format
+msgid "{provider} (configured)"
+msgstr "{provider} (eingerichtet)"
+
+#: ../plugin.py:219
+#, python-brace-format
+msgid "{source}\n{tag}\n\nInstall now? Playing Telerising channels will be interrupted briefly."
+msgstr "{source}\n{tag}\n\nJetzt installieren? Laufende Telerising-Sender werden kurz unterbrochen."
+
+#: ../plugin.py:175
+#, python-brace-format
+msgid "{version}\n{status} · Local server · {model}"
+msgstr "{version}\n{status} · Lokaler Server · {model}"

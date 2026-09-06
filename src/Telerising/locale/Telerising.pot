@@ -1,0 +1,857 @@
+# Telerising gettext catalog.
+msgid ""
+msgstr "Project-Id-Version: Telerising 0.1.0\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2026-09-05 00:00+0000\nPO-Revision-Date: 2026-09-05 00:00+0000\nLast-Translator: Telerising contributors\nLanguage-Team: \nLanguage: \nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../setup.xml
+msgid "5001/5002 use ServiceApp; 4097 uses Enigma2's internal GStreamer player. Reimport existing Telerising bouquets to apply a player change."
+msgstr ""
+
+#: ../core.py:63
+msgid "A Telerising operation is already running."
+msgstr ""
+
+#: ../plugin.py:202 ../plugin.py:133
+msgid "About Telerising"
+msgstr ""
+
+#: ../plugin.py:86 ../plugin.py:161 ../webif.py:153
+#, python-brace-format
+msgid "Action failed ({error})."
+msgstr ""
+
+#: ../webif.py:174
+msgid "Advanced settings in the original web interface. Sign-in is handled automatically."
+msgstr ""
+
+#: ../core.py:45
+msgid "Argentina"
+msgstr ""
+
+#: ../core.py:254
+msgid "At least 650 MB of free storage is required."
+msgstr ""
+
+#: ../setup.xml
+msgid "Available quality levels depend on the provider and account."
+msgstr ""
+
+#: ../plugin.py:199
+msgid "Binary downloads:"
+msgstr ""
+
+#: ../core.py:45
+msgid "Brazil"
+msgstr ""
+
+#: ../core.py:45
+msgid "Canada"
+msgstr ""
+
+#: ../plugin.py:209
+msgid "Changing autostart…"
+msgstr ""
+
+#: ../webif.py:171
+msgid "Changing the username or guest access briefly restarts the local server."
+msgstr ""
+
+#: ../setup.xml
+msgid "Channel synchronization time"
+msgstr ""
+
+#: ../setup.xml
+msgid "Channel synchronization weekday"
+msgstr ""
+
+#: ../setup.xml
+msgid "Check for updates"
+msgstr ""
+
+#: ../plugin.py:212
+msgid "Checking the latest GitHub release…"
+msgstr ""
+
+#: ../core.py:45
+msgid "Chile"
+msgstr ""
+
+#: ../plugin.py:121
+msgid "Close"
+msgstr ""
+
+#: ../plugin.py:128 ../plugin.py:129
+msgid "Close Telerising"
+msgstr ""
+
+#: ../webif.py:165
+msgid "Configured"
+msgstr ""
+
+#: ../core.py:380 ../core.py:399
+msgid "Could not change autostart."
+msgstr ""
+
+#: ../releases.py:71
+msgid "Could not determine the latest release version."
+msgstr ""
+
+#: ../releases.py:58
+msgid "Could not find exactly one matching release download for this receiver."
+msgstr ""
+
+#: ../webif.py:59
+msgid "Could not open the original Telerising web interface. Please check the server version."
+msgstr ""
+
+#: ../core.py:140
+msgid "Could not prepare the saved provider profiles. Please check the Telerising startup log."
+msgstr ""
+
+#: ../core.py:452
+msgid "Could not read the saved provider settings."
+msgstr ""
+
+#: ../scheduler.py:66
+msgid "Could not save the update notification state."
+msgstr ""
+
+#: ../webif.py:166 ../setup.xml
+msgid "Country"
+msgstr ""
+
+#: ../plugin.py:270
+msgid "Creating TV bouquet…"
+msgstr ""
+
+#: ../settings.py:13
+msgid "Daily"
+msgstr ""
+
+#: ../core.py:45
+msgid "Denmark"
+msgstr ""
+
+#: ../plugin.py:183
+msgid "Disable autostart"
+msgstr ""
+
+#: ../settings.py:13
+msgid "Disabled"
+msgstr ""
+
+#: ../webif.py:182
+msgid "Done."
+msgstr ""
+
+#: ../releases.py:26
+#, python-brace-format
+msgid "Download server is unreachable ({error})."
+msgstr ""
+
+#: ../setup.xml
+msgid "Download source"
+msgstr ""
+
+#: ../releases.py:85
+msgid "Download source is not allowed."
+msgstr ""
+
+#: ../plugin.py:222
+msgid "Downloading and installing…"
+msgstr ""
+
+#: ../plugin.py:221
+msgid "Dreambox Two: Support for this receiver is experimental."
+msgstr ""
+
+#: ../plugin.py:267
+#, python-brace-format
+msgid "EPG/picon references matched: {matched}/{count}. Select sources and import guide data in EPGImport."
+msgstr ""
+
+#: ../plugin.py:180
+msgid "EPGImport / program guide"
+msgstr ""
+
+#: ../setup.xml
+msgid "Edit the saved login. Changing the username briefly restarts the local server."
+msgstr ""
+
+#: ../setup.xml
+msgid "Edit the saved password. Changes are saved to the local Telerising server."
+msgstr ""
+
+#: ../setup.xml
+msgid "Enable Telerising in the OpenWebif menu to set up providers and import channels in the browser."
+msgstr ""
+
+#: ../plugin.py:183
+msgid "Enable autostart"
+msgstr ""
+
+#: ../settings.py:11
+msgid "Enigma2 / internal GStreamer (4097)"
+msgstr ""
+
+#: ../webif.py:167
+msgid "Enter the provider password."
+msgstr ""
+
+#: ../plugin.py:263
+msgid "Fetching channel list…"
+msgstr ""
+
+#: ../core.py:45
+msgid "France"
+msgstr ""
+
+#: ../settings.py:14
+msgid "Friday"
+msgstr ""
+
+#: ../core.py:45 ../settings.py:26
+msgid "Germany"
+msgstr ""
+
+#: ../plugin.py:125
+msgid "INFO: About Telerising"
+msgstr ""
+
+#: ../plugin.py:123
+msgid "Import channels"
+msgstr ""
+
+#: ../plugin.py:131 ../plugin.py:179
+msgid "Import channels into the TV channel list"
+msgstr ""
+
+#: ../webif.py:181
+msgid "Import these channels? The previous bouquet for this provider will be backed up and replaced."
+msgstr ""
+
+#: ../plugin.py:266
+#, python-brace-format
+msgid "Import {count} channels into a dedicated TV bouquet?\n\n{channels}\n\nAn earlier Telerising import for this provider will be backed up and replaced."
+msgstr ""
+
+#: ../plugin.py:275
+#, python-brace-format
+msgid "Imported {count} channels. The Telerising bouquet is now available in the TV channel list."
+msgstr ""
+
+#: ../plugin.py:177 ../webif.py:175
+msgid "Install server / check for updates"
+msgstr ""
+
+#: ../webif.py:180
+msgid "Install the selected release? Playing Telerising channels will be interrupted briefly."
+msgstr ""
+
+#: ../core.py:173
+msgid "Invalid API request."
+msgstr ""
+
+#: ../core.py:189
+msgid "Invalid API response. Check the login and server version."
+msgstr ""
+
+#: ../playlist.py:130 ../playlist.py:162 ../playlist.py:137
+msgid "Invalid Telerising backup directory."
+msgstr ""
+
+#: ../playlist.py:29
+msgid "Invalid channel entry."
+msgstr ""
+
+#: ../playlist.py:53
+msgid "Invalid channel profile."
+msgstr ""
+
+#: ../core.py:116
+msgid "Invalid installation path."
+msgstr ""
+
+#: ../core.py:113
+msgid "Invalid installation state."
+msgstr ""
+
+#: ../playlist.py:149
+msgid "Invalid provider ID."
+msgstr ""
+
+#: ../core.py:214
+msgid "Invalid provider definition."
+msgstr ""
+
+#: ../webif.py:51 ../webif.py:116
+msgid "Invalid request."
+msgstr ""
+
+#: ../core.py:45
+msgid "Italy"
+msgstr ""
+
+#: ../webif.py:167
+msgid "Leave empty to keep the saved password."
+msgstr ""
+
+#: ../webif.py:175
+msgid "Load configured providers"
+msgstr ""
+
+#: ../webif.py:164
+msgid "Load providers"
+msgstr ""
+
+#: ../plugin.py:263
+msgid "Loading configured providers…"
+msgstr ""
+
+#: ../plugin.py:260
+msgid "Loading provider settings…"
+msgstr ""
+
+#: ../plugin.py:244
+msgid "Loading providers…"
+msgstr ""
+
+#: ../plugin.py:298
+msgid "Local TV server"
+msgstr ""
+
+#: ../plugin.py:297 ../webif.py:162
+msgid "Local TV server and channel import"
+msgstr ""
+
+#: ../webif.py:34
+msgid "Method not allowed."
+msgstr ""
+
+#: ../core.py:45
+msgid "Mexico"
+msgstr ""
+
+#: ../playlist.py:36
+msgid "Missing channel name."
+msgstr ""
+
+#: ../settings.py:14
+msgid "Monday"
+msgstr ""
+
+#: ../playlist.py:20
+msgid "No M3U channel list was received."
+msgstr ""
+
+#: ../releases.py:61
+msgid "No SHA256 digest is available for this download. Installation aborted."
+msgstr ""
+
+#: ../core.py:340
+msgid "No previous installation is available."
+msgstr ""
+
+#: ../plugin.py:249 ../webif.py:182
+msgid "No provider has been configured yet."
+msgstr ""
+
+#: ../core.py:45
+msgid "Norway"
+msgstr ""
+
+#: ../setup.xml
+msgid "Notify about updates"
+msgstr ""
+
+#: ../plugin.py:202
+msgid "OK"
+msgstr ""
+
+#: ../setup.xml
+msgid "Only available for providers that support guest access."
+msgstr ""
+
+#: ../plugin.py:132
+msgid "Open Telerising settings"
+msgstr ""
+
+#: ../webif.py:173
+msgid "Open original Telerising web interface"
+msgstr ""
+
+#: ../webif.py:165 ../setup.xml
+msgid "Password"
+msgstr ""
+
+#: ../webif.py:169 ../setup.xml
+msgid "Picture quality"
+msgstr ""
+
+#: ../setup.xml
+msgid "Playback profile"
+msgstr ""
+
+#: ../core.py:479
+msgid "Please enter a username/email and password."
+msgstr ""
+
+#: ../core.py:522
+msgid "Please install ServiceApp and restart Enigma2 before using this playback profile."
+msgstr ""
+
+#: ../core.py:199 ../core.py:445
+msgid "Please install Telerising first."
+msgstr ""
+
+#: ../core.py:252
+msgid "Please mount a storage device at /media/hdd first."
+msgstr ""
+
+#: ../core.py:474
+msgid "Please select a supported country from the list."
+msgstr ""
+
+#: ../setup.xml
+msgid "Postpone a task until standby. These tasks do not wake the receiver from deep standby."
+msgstr ""
+
+#: ../webif.py:176
+msgid "Preview channel import"
+msgstr ""
+
+#: ../webif.py:164
+msgid "Provider"
+msgstr ""
+
+#: ../plugin.py:119 ../plugin.py:168
+msgid "Reading status…"
+msgstr ""
+
+#: ../setup.xml
+msgid "Refresh existing Telerising bouquets using the local server. Other bouquets remain unchanged."
+msgstr ""
+
+#: ../webif.py:170
+msgid "Reload saved settings"
+msgstr ""
+
+#: ../webif.py:119
+msgid "Reload the provider settings before saving."
+msgstr ""
+
+#: ../webif.py:183
+msgid "Request failed. Please reload the page and check the server status."
+msgstr ""
+
+#: ../plugin.py:182 ../webif.py:172
+msgid "Restart server"
+msgstr ""
+
+#: ../plugin.py:182
+msgid "Restarting server…"
+msgstr ""
+
+#: ../plugin.py:184
+msgid "Restore previous version"
+msgstr ""
+
+#: ../plugin.py:225
+msgid "Restore the previous server version and keep the current provider profiles?"
+msgstr ""
+
+#: ../plugin.py:225
+msgid "Restoring previous version…"
+msgstr ""
+
+#: ../setup.xml
+msgid "Run scheduled tasks only in standby"
+msgstr ""
+
+#: ../plugin.py:127 ../plugin.py:130
+msgid "Run the selected action"
+msgstr ""
+
+#: ../plugin.py:174 ../webif.py:177
+msgid "Running"
+msgstr ""
+
+#: ../releases.py:99
+msgid "SHA256 mismatch. The download will not be installed."
+msgstr ""
+
+#: ../settings.py:14
+msgid "Saturday"
+msgstr ""
+
+#: ../webif.py:170
+msgid "Save provider settings"
+msgstr ""
+
+#: ../plugin.py:185
+msgid "Scheduled tasks"
+msgstr ""
+
+#: ../plugin.py:122
+msgid "Select"
+msgstr ""
+
+#: ../webif.py:166 ../setup.xml
+msgid "Select the country for the Pluto channel list. No account or password is required."
+msgstr ""
+
+#: ../plugin.py:173 ../webif.py:177
+msgid "Server not installed"
+msgstr ""
+
+#: ../core.py:142
+msgid "Service action failed. Please check the Telerising log."
+msgstr ""
+
+#: ../plugin.py:178 ../webif.py:164
+msgid "Set up provider"
+msgstr ""
+
+#: ../webif.py:163
+msgid "Set up providers here or on the receiver. Imported channels appear in the normal TV channel list."
+msgstr ""
+
+#: ../plugin.py:79
+msgid "Setting up provider…"
+msgstr ""
+
+#: ../plugin.py:124
+msgid "Settings"
+msgstr ""
+
+#: ../plugin.py:186
+msgid "Settings / optional web interface"
+msgstr ""
+
+#: ../setup.xml
+msgid "Show a short toast once per new release. Updates are installed manually."
+msgstr ""
+
+#: ../webif.py:168
+msgid "Show password"
+msgstr ""
+
+#: ../setup.xml
+msgid "Show web interface in OpenWebif"
+msgstr ""
+
+#: ../core.py:45
+msgid "Spain"
+msgstr ""
+
+#: ../plugin.py:181 ../webif.py:172
+msgid "Start server"
+msgstr ""
+
+#: ../setup.xml
+msgid "Start server automatically"
+msgstr ""
+
+#: ../setup.xml
+msgid "Start the installed server when the receiver boots. This setting is included in the Enigma2 settings backup."
+msgstr ""
+
+#: ../plugin.py:174 ../webif.py:178
+msgid "Started, but not reachable"
+msgstr ""
+
+#: ../plugin.py:206
+msgid "Starting server…"
+msgstr ""
+
+#: ../plugin.py:181 ../webif.py:172
+msgid "Stop server"
+msgstr ""
+
+#: ../plugin.py:174 ../webif.py:177
+msgid "Stopped"
+msgstr ""
+
+#: ../plugin.py:206
+msgid "Stopping server…"
+msgstr ""
+
+#: ../webif.py:169 ../setup.xml
+msgid "Stream format"
+msgstr ""
+
+#: ../settings.py:14
+msgid "Sunday"
+msgstr ""
+
+#: ../core.py:45
+msgid "Sweden"
+msgstr ""
+
+#: ../setup.xml
+msgid "Synchronize channel lists"
+msgstr ""
+
+#: ../core.py:160
+msgid "Telerising did not become ready. Please check the log."
+msgstr ""
+
+#: ../core.py:182
+msgid "Telerising is unreachable or rejected the request."
+msgstr ""
+
+#: ../plugin.py:251 ../setup.xml
+msgid "Telerising provider"
+msgstr ""
+
+#: ../core.py:193
+msgid "Telerising rejected the request. Check the provider, login details and account permissions."
+msgstr ""
+
+#: ../core.py:192
+msgid "Telerising requires a Widevine device file (WVD) for this provider, but it is missing. Account login could not be checked."
+msgstr ""
+
+#: ../scheduler.py:67
+msgid "Telerising scheduled task completed."
+msgstr ""
+
+#: ../scheduler.py:78
+#, python-brace-format
+msgid "Telerising scheduled task failed ({error})."
+msgstr ""
+
+#: ../setup.xml
+msgid "Telerising scheduled tasks"
+msgstr ""
+
+#: ../setup.xml
+msgid "Telerising settings"
+msgstr ""
+
+#: ../core.py:136
+msgid "Telerising storage is not mounted. Please check /media/hdd and start the server again."
+msgstr ""
+
+#: ../plugin.py:198
+msgid "Telerising support (Kodinerds):"
+msgstr ""
+
+#: ../scheduler.py:65
+#, python-brace-format
+msgid "Telerising update available: {source} {tag}"
+msgstr ""
+
+#: ../scheduler.py:95
+msgid "Telerising: Check for updates"
+msgstr ""
+
+#: ../scheduler.py:95
+msgid "Telerising: Synchronize channels"
+msgstr ""
+
+#: ../plugin.py:200
+msgid "Thanks to easy4me, fds97AVVS and all contributors for Telerising and the available builds."
+msgstr ""
+
+#: ../core.py:179
+msgid "The Telerising response is too large."
+msgstr ""
+
+#: ../webif.py:31
+msgid "The Telerising web interface is disabled."
+msgstr ""
+
+#: ../core.py:202
+msgid "The Telerising web password is missing."
+msgstr ""
+
+#: ../core.py:138
+msgid "The VPN endpoint route could not be prepared. Please check the receiver's network routes."
+msgstr ""
+
+#: ../core.py:282
+msgid "The binary does not match the receiver's userspace."
+msgstr ""
+
+#: ../playlist.py:42
+msgid "The channel list is empty or incomplete."
+msgstr ""
+
+#: ../core.py:250
+msgid "The device or selected download source has changed."
+msgstr ""
+
+#: ../releases.py:93
+msgid "The download exceeds the size limit."
+msgstr ""
+
+#: ../releases.py:23
+msgid "The download server response is too large."
+msgstr ""
+
+#: ../core.py:270
+msgid "The extracted installation is too large."
+msgstr ""
+
+#: ../plugin.py:216 ../webif.py:179
+msgid "The latest version is already installed."
+msgstr ""
+
+#: ../core.py:239
+msgid "The local Telerising server is not supported on this model."
+msgstr ""
+
+#: ../setup.xml
+msgid "The playback profile is selected separately for bouquet import."
+msgstr ""
+
+#: ../playlist.py:96
+msgid "The playlist contains URLs that do not point to the local Telerising server."
+msgstr ""
+
+#: ../core.py:210
+msgid "The provider definition in this version is not supported yet."
+msgstr ""
+
+#: ../core.py:53 ../core.py:464
+msgid "The provider or manifest type is not supported."
+msgstr ""
+
+#: ../releases.py:97
+msgid "The release download was interrupted."
+msgstr ""
+
+#: ../core.py:123
+msgid "The selected installation is missing."
+msgstr ""
+
+#: ../core.py:470
+msgid "The selected picture quality is not supported."
+msgstr ""
+
+#: ../setup.xml
+msgid "The selected source will be used for the next installation."
+msgstr ""
+
+#: ../core.py:537
+msgid "The server version changed. Fetch a new channel preview."
+msgstr ""
+
+#: ../core.py:460
+msgid "The server version changed. Reopen the provider settings."
+msgstr ""
+
+#: ../webif.py:46
+msgid "The session has expired. Reload this page."
+msgstr ""
+
+#: ../plugin.py:196
+msgid "This helper plugin simplifies Telerising installation, updates, account setup and channel import on Enigma2."
+msgstr ""
+
+#: ../playlist.py:34
+msgid "This list contains unsupported stream URLs."
+msgstr ""
+
+#: ../plugin.py:256
+msgid "This provider requires a device code, cookies or another special login flow. This plugin version supports native username/email login and guest access."
+msgstr ""
+
+#: ../core.py:466
+msgid "This provider requires a login."
+msgstr ""
+
+#: ../core.py:468 ../webif.py:87
+msgid "This provider requires a special login flow. This plugin version supports username/email login and guest access."
+msgstr ""
+
+#: ../settings.py:14
+msgid "Thursday"
+msgstr ""
+
+#: ../settings.py:14
+msgid "Tuesday"
+msgstr ""
+
+#: ../releases.py:74
+msgid "Unexpected release format."
+msgstr ""
+
+#: ../core.py:45
+msgid "United Kingdom"
+msgstr ""
+
+#: ../core.py:45
+msgid "United States"
+msgstr ""
+
+#: ../webif.py:138
+msgid "Unknown action or missing preview. Please try again."
+msgstr ""
+
+#: ../core.py:517 ../webif.py:83
+msgid "Unknown provider."
+msgstr ""
+
+#: ../webif.py:41
+msgid "Unknown request."
+msgstr ""
+
+#: ../core.py:131
+msgid "Unknown service action."
+msgstr ""
+
+#: ../core.py:274
+msgid "Unsafe path in the release archive."
+msgstr ""
+
+#: ../setup.xml
+msgid "Update check time"
+msgstr ""
+
+#: ../setup.xml
+msgid "Update check weekday"
+msgstr ""
+
+#: ../setup.xml
+msgid "Use the Enigma2 scheduler to check the selected download source. No update is installed automatically."
+msgstr ""
+
+#: ../webif.py:168 ../setup.xml
+msgid "Use without signing in"
+msgstr ""
+
+#: ../webif.py:165 ../setup.xml
+msgid "Username / email"
+msgstr ""
+
+#: ../plugin.py:197
+msgid "We cannot provide support for Telerising login or M3U export failures, add providers or extend the server. For these topics, please use the Kodinerds forum."
+msgstr ""
+
+#: ../settings.py:14
+msgid "Wednesday"
+msgstr ""
+
+#: ../settings.py:13
+msgid "Weekly"
+msgstr ""
+
+#: ../webif.py:176
+msgid "Working…"
+msgstr ""
+
+#: ../plugin.py:247
+#, python-brace-format
+msgid "{provider} (configured)"
+msgstr ""
+
+#: ../plugin.py:219
+#, python-brace-format
+msgid "{source}\n{tag}\n\nInstall now? Playing Telerising channels will be interrupted briefly."
+msgstr ""
+
+#: ../plugin.py:175
+#, python-brace-format
+msgid "{version}\n{status} · Local server · {model}"
+msgstr ""
