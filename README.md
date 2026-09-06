@@ -20,16 +20,16 @@ normal TV bouquets using native Enigma2 setup screens.**
 [![GitHub Activity](https://img.shields.io/github/commit-activity/m/oe-alliance-plugins/telerising.svg?label=commits)](https://github.com/oe-alliance-plugins/telerising/commits)
 
 ## SonarCloud status
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=oe-alliance-plugins_telerising&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=oe-alliance-plugins_telerising)
-[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=oe-alliance-plugins_telerising&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=oe-alliance-plugins_telerising)
-[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=oe-alliance-plugins_telerising&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=oe-alliance-plugins_telerising)
-[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=oe-alliance-plugins_telerising&metric=bugs)](https://sonarcloud.io/summary/new_code?id=oe-alliance-plugins_telerising)
-[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=oe-alliance-plugins_telerising&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=oe-alliance-plugins_telerising)
-[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=oe-alliance-plugins_telerising&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=oe-alliance-plugins_telerising)
-[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=oe-alliance-plugins_telerising&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=oe-alliance-plugins_telerising)
-[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=oe-alliance-plugins_telerising&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=oe-alliance-plugins_telerising)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=oe-alliance-plugins_Telerising&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=oe-alliance-plugins_Telerising)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=oe-alliance-plugins_Telerising&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=oe-alliance-plugins_Telerising)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=oe-alliance-plugins_Telerising&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=oe-alliance-plugins_Telerising)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=oe-alliance-plugins_Telerising&metric=bugs)](https://sonarcloud.io/summary/new_code?id=oe-alliance-plugins_Telerising)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=oe-alliance-plugins_Telerising&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=oe-alliance-plugins_Telerising)
+[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=oe-alliance-plugins_Telerising&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=oe-alliance-plugins_Telerising)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=oe-alliance-plugins_Telerising&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=oe-alliance-plugins_Telerising)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=oe-alliance-plugins_Telerising&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=oe-alliance-plugins_Telerising)
 
-[![SonarQube Cloud](https://sonarcloud.io/images/project_badges/sonarcloud-light.svg)](https://sonarcloud.io/summary/new_code?id=oe-alliance-plugins_telerising)
+[![SonarQube Cloud](https://sonarcloud.io/images/project_badges/sonarcloud-light.svg)](https://sonarcloud.io/summary/new_code?id=oe-alliance-plugins_Telerising)
 
 ---
 
